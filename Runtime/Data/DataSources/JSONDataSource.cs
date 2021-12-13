@@ -7,13 +7,18 @@ namespace UUM.Data
 {
     public class JSONDataSource : DataSource
     {
+        public TextAsset asset;
         [TextArea(15,20)]
         public string json;
-
+        
         private bool inArray = false;
 
         private void Start()
         {
+            if (asset != null)
+            {
+                json = asset.text;
+            }
             Collection collection = Collections.Create(collectionName);
             JsonTextReader reader = new JsonTextReader(new StringReader(json));
 
