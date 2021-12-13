@@ -1,0 +1,16 @@
+{
+  "name": "com.aaronstatic.uum",
+  "version": "1.0.0",
+  "displayName": "Unity UI Middleware (UUM)",
+  "description": "A data-aware middleware for the Unity UI Toolkit",
+  "unity": "2021.2",
+  "dependancies": {
+    "com.unity.nuget.newtonsoft-json": "2.0"
+  },
+  "keywords": ["library","uitoolkit","utility"],
+  "author": {
+    "name": "Aaron Static",
+    "email": "aaronstatic@gmail.com",
+    "url": "http://twitter.com/aaronstatic"
+  }
+}
